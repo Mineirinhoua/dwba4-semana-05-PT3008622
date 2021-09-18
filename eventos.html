@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Eventos - IFSP - Pirituba</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <div id="barra" align="right">
+      <p>
+        <a href="index.html">HOME</a> | 
+        <a href="eventos.html">EVENTOS</a> |
+        <a href="contato.html">CONTATO</a> |
+        <a href="sobre.html">SOBRE</a> |
+        <a href="entrar.html">ENTRAR</a>
+      </p>
+    </div>
+
+    <img src='https://github.com/DWBA4/dwba4_semana_imagens/blob/master/Logo.jpg?raw=true' id='cabeçalho' />
+    <h1>Inscreva-se</h1>
+
+    <form action="mailto:eric.brito@aluno.ifsp.edu.br" method="POST" enctype="application/x-www-form-urlencoded" name="EmailFormTest">
+      Evento <select name="evento" required>
+        <option value="">-- Selecione --</option>
+        <option>Voe sem asas</option>
+        <option>Festa junina</option>
+        <option>Semana de tecnologia</option>
+        </select><br/><br/>
+
+      <fieldset>
+        <legend>Informações de Acesso</legend><br/>
+        <label for="input_usuario">Usuário </label>
+        <input name="usuario" id="input_usuario" required><br/><br/>
+        <label for="imput_senha">Senha </label>
+        <input nome="senha" type="password" id="imput_senha" required><br/><br/>
+        <label for="input_confirmarsenha">Confirme a Senha </label>
+        <input nome="confirmarsenha" type="password" id="input_confirmarsenha" required><br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Pessoais</legend><br/>
+        <label for="input_nomecompleto">Nome Completo </label>
+        <input name="nomecompleto" id="input_nomecompleto" required><br/><br/>
+        <label for="input_email">E-mail </label>
+        <input name="email" type="email" id="input_email" required><br/><br/>
+        <label for="input_celular">Celular </label>
+        <input name="celular" id="input_celular" pattern="[(]{1}[1-9]{2}[)]{1}[1-9]{1}[\s]{1}[0-9]{4}[\-]{1}[0-9]{4}" required> (99) 99999-9999<br/><br/>
+
+        <fieldset>
+        <legend>Sexo</legend>
+        <label for="input_masc">Masculino </label>
+        <input value="masc" type="radio" id="input_masc" name="sexo" required>
+        <label for="input_fem">Feminino </label><input value="fem" type="radio" id="input_fem" name="sexo" required>
+        </fieldset><br/>
+        
+        <label for="input_data">Data de Nascimento </label>
+        <input name="datanasc" type="date" id="input_data" required><br/><br/>
+        <label for="input_cor">Cor Favorita </label>
+        <input name="cor" type="color" id="input_cor" required><br/><br/>
+        <label for="input_git">Perfil no Github </label>
+        <input name="github" type="url" id="input_git" required><br/><br/>
+      </fieldset>
+
+     <br/><button type="submit" >Inscrever</button>
+     <button type="reset">Limpar</button>
+
+    </form>
+   </br></br><a href='https://www.facebook.com/ifsppirituba'><img src='https://github.com/DWBA4/dwba4_semana_imagens/blob/master/facebook.png?raw=true' width='42px' /></a>
+   <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
+
+  </body>
+</html>
